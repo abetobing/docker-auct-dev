@@ -10,7 +10,7 @@ jhipster:
         base64-secret: OGNjNGRmYTdhN2E4OWU0ZDY1YjNmYjhkNWVkNjdlOGJiMDdlNmM4MzJkYmRhNGY3YjkzM2Y2ODMwMGE2NDEyNDFiYzA1YjM3NTRlNWIxZDIxYjdmNjFmYmZlYzlkODczMDdjMg==
   logging:
     logstash: # forward logs to ELK
-      enabled: true
+      enabled: false
       host: jhipster-logstash
   metrics:
     logs: # report metrics in the logs
@@ -19,12 +19,7 @@ jhipster:
 spring:
   zipkin:
     base-url: http://jhipster-zipkin:9411
-    enabled: true
+    enabled: false
   sleuth:
     sampler:
       probability: 1 # report 100% of traces to Zipkin
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@jhipster-registry:8761/eureka/
