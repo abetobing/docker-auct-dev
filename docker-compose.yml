@@ -41,8 +41,6 @@ services:
   #   mem_reservation: 128m
   jhipster-registry:
     image: jhipster/jhipster-registry:v5.0.2
-    mem_limit: 256m
-    mem_reservation: 128m
     volumes:
       - /opt/auctdev/central-server-config:/central-config
     # By default the JHipster Registry runs with the "dev" and "native"
