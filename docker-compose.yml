@@ -31,8 +31,8 @@ services:
     extends:
       file: kafka.yml
       service: kafka
-    mem_limit: 128m
-    mem_reservation: 64m
+    mem_limit: 256m
+    mem_reservation: 128m
   # jhipster-registry:
   #   extends:
   #     file: jhipster-registry.yml
@@ -50,7 +50,7 @@ services:
     # "native" profile means the filesystem is used to store data, see
     # http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html
     environment:
-      - JAVA_OPTS=-Xmx256m -Xms128m
+      # - JAVA_OPTS=-Xmx256m -Xms128m
       - SPRING_PROFILES_ACTIVE=dev
       - SPRING_SECURITY_USER_PASSWORD=admin
       - JHIPSTER_REGISTRY_PASSWORD=admin
@@ -79,8 +79,6 @@ services:
     ports:
       - 5000:5000
       - 5000:5000/udp
-    mem_limit: 128m
-    mem_reservation: 64m
   jhipster-zipkin:
     image: jhipster/jhipster-zipkin:v4.1.0
     ports:
