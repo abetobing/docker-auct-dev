@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "auct-auth",
+      "auct-bid",
+      "auct-catalogue",
+      "auct-gateway"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "monitoring": "elk",
+    "consoleOptions": [
+      "zipkin"
+    ],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "OGNjNGRmYTdhN2E4OWU0ZDY1YjNmYjhkNWVkNjdlOGJiMDdlNmM4MzJkYmRhNGY3YjkzM2Y2ODMwMGE2NDEyNDFiYzA1YjM3NTRlNWIxZDIxYjdmNjFmYmZlYzlkODczMDdjMg=="
+  }
+}
