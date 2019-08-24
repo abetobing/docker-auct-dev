@@ -37,8 +37,8 @@ services:
     extends:
       file: jhipster-registry.yml
       service: jhipster-registry
-    mem_limit: 128m
-    mem_reservation: 64m
+    mem_limit: 256m
+    mem_reservation: 128m
   jhipster-logstash:
     image: jhipster/jhipster-logstash:v4.1.0
     environment:
