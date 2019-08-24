@@ -19,7 +19,7 @@ jhipster:
 spring:
   zipkin:
     base-url: http://jhipster-zipkin:9411
-    enabled: false
+    enabled: true
   sleuth:
     sampler:
       probability: 1 # report 100% of traces to Zipkin
