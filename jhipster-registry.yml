@@ -10,6 +10,7 @@ services:
     # http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html
     environment:
       - _JAVA_OPTIONS=-Xmx128m -Xms64m
+      - JAVA_OPTS=-Xmx128m -Xms64m
       - SPRING_PROFILES_ACTIVE=dev,uaa
       - SPRING_SECURITY_USER_PASSWORD=admin
       - JHIPSTER_REGISTRY_PASSWORD=admin
